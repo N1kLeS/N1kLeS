@@ -31,7 +31,9 @@ But the main thing is that I understand why it broke and how to fix it.
 
 ---
 
-## ⚙️ Tech stack
+<p align="left">
+  <img src="./assets/tech-stack-title.svg?v=1" alt="Tech stack"/>
+</p>
 
 ### Languages
 
