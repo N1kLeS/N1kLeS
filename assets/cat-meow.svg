@@ -1,4 +1,4 @@
-<svg width="720" height="280" viewBox="0 0 720 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="860" height="300" viewBox="0 0 860 300" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
       .float {
@@ -188,9 +188,32 @@
 
   </defs>
 
-  <rect width="720" height="280" fill="transparent"/>
+  <rect width="860" height="300" fill="transparent"/>
 
-  <g class="bubble-float" transform="translate(382 24)">
+  <g transform="translate(295 47) scale(1.16)"> 
+    <g class="float">
+    <path class="outline" d="M60 81L74 24L111 61L147 24L160 81C186 106 196 139 185 169C173 203 139 214 110 214C81 214 47 203 35 169C24 139 34 106 60 81Z"/>
+    <path class="cat" d="M66 83L78 36L109 68C110 69 112 69 113 68L144 36L155 83C178 105 187 135 177 163C166 192 136 202 110 202C84 202 54 192 43 163C33 135 42 105 66 83Z"/>
+    <path class="inner-ear" d="M81 42L101 77L66 84L81 42Z"/>
+    <path class="inner-ear" d="M141 42L121 77L156 84L141 42Z"/>
+    <ellipse class="eye" cx="77" cy="116" rx="18" ry="25"/>
+    <ellipse class="eye" cx="143" cy="116" rx="18" ry="25"/>
+    <ellipse class="highlight" cx="84" cy="111" rx="6" ry="12"/>
+    <ellipse class="highlight" cx="150" cy="111" rx="6" ry="12"/>
+    <path class="nose" d="M101 140H119L110 153L101 140Z"/>
+    <path class="mouth" d="M110 152V163"/>
+    <path class="mouth" d="M110 163C100 176 87 176 76 164"/>
+    <path class="mouth" d="M110 163C120 176 133 176 144 164"/>
+    <path class="whisker" d="M57 130L25 123"/>
+    <path class="whisker" d="M57 143H21"/>
+    <path class="whisker" d="M57 156L25 163"/>
+    <path class="whisker" d="M163 130L195 123"/>
+    <path class="whisker" d="M163 143H199"/>
+    <path class="whisker" d="M163 156L195 163"/>
+    </g>
+  </g>
+
+  <g class="bubble-float" transform="translate(440 -6)">
     <path d="M19 22C19 14.82 24.82 9 32 9H288C295.18 9 301 14.82 301 22V73C301 80.18 295.18 86 288 86H122L92 109L99 86H32C24.82 86 19 80.18 19 73V22Z" class="bubble"/>
 
 ```
@@ -211,26 +234,5 @@
 </g>
 ```
 
-  </g>
-
-  <g class="float" transform="translate(250 48)">
-    <path class="outline" d="M60 81L74 24L111 61L147 24L160 81C186 106 196 139 185 169C173 203 139 214 110 214C81 214 47 203 35 169C24 139 34 106 60 81Z"/>
-    <path class="cat" d="M66 83L78 36L109 68C110 69 112 69 113 68L144 36L155 83C178 105 187 135 177 163C166 192 136 202 110 202C84 202 54 192 43 163C33 135 42 105 66 83Z"/>
-    <path class="inner-ear" d="M81 42L101 77L66 84L81 42Z"/>
-    <path class="inner-ear" d="M141 42L121 77L156 84L141 42Z"/>
-    <ellipse class="eye" cx="77" cy="116" rx="18" ry="25"/>
-    <ellipse class="eye" cx="143" cy="116" rx="18" ry="25"/>
-    <ellipse class="highlight" cx="84" cy="111" rx="6" ry="12"/>
-    <ellipse class="highlight" cx="150" cy="111" rx="6" ry="12"/>
-    <path class="nose" d="M101 140H119L110 153L101 140Z"/>
-    <path class="mouth" d="M110 152V163"/>
-    <path class="mouth" d="M110 163C100 176 87 176 76 164"/>
-    <path class="mouth" d="M110 163C120 176 133 176 144 164"/>
-    <path class="whisker" d="M57 130L25 123"/>
-    <path class="whisker" d="M57 143H21"/>
-    <path class="whisker" d="M57 156L25 163"/>
-    <path class="whisker" d="M163 130L195 123"/>
-    <path class="whisker" d="M163 143H199"/>
-    <path class="whisker" d="M163 156L195 163"/>
   </g>
 </svg>
