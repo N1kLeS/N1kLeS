@@ -1,9 +1,6 @@
 <p align="center">
   <img src="./assets/glow-title.svg" alt="Hi there, I'm Nikita"/>
 </p>
-<p align="center">
-  <b>Software Engineering student ITMO University</b><br>
-</p>
 
 
 ## About me
