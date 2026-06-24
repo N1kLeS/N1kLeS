@@ -1,7 +1,12 @@
-<h1 align="center">
-  Hi there, I'm Nikita / N1kLeS
-  <img src="./assets/pixel-hand.gif" width="42" alt="waving hand"/>
-</h1>
+<p align="center">
+  <img src="./assets/glow-title.svg" alt="Hi there, I'm Nikita / N1kLeS"/>
+</p>
+
+<p align="center">
+  <b>Software Engineering student @ ITMO University</b><br>
+  code, bugs, labs, commits and a little bit of chaos
+</p>
+
 
 <p align="center">
   <b>Software Engineering student @ ITMO University</b><br>
