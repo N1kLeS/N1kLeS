@@ -54,7 +54,9 @@ But the main thing is that I understand why it broke and how to fix it.
 
 ---
 
-## 📊 GitHub stats
+<p align="center">
+  <img src="./assets/github-stats-title.svg?v=1" alt="GitHub stats"/>
+</p>
 
 <p align="center">
   <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=N1kLeS&theme=radical" alt="Profile details"/>
