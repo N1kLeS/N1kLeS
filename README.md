@@ -72,7 +72,7 @@ But the main thing is that I understand why it broke and how to fix it.
       <img src="./assets/black-cat.svg" width="150" alt="black cat"/>
     </summary>
     <p align="center">
-      <img src="./assets/meow-wave.svg" width="260" alt="meow"/>
+      <img src="./assets/meow-wave.svg" width="280" alt="meow"/>
     </p>
   </details>
 </p>
@@ -80,3 +80,4 @@ But the main thing is that I understand why it broke and how to fix it.
 <p align="center">
   <b>Probably nothing.</b>
 </p>
+
