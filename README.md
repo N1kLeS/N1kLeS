@@ -89,10 +89,6 @@ But the main thing is that I understand why it broke and how to fix it.
   <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=N1kLeS&theme=radical" alt="Stats"/>
 </p>
 
-<p align="center">
-  <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=N1kLeS&theme=radical&utcOffset=3" alt="Productive time"/>
-</p>
-
 ---
 
 ## 🧩 Small fact
