@@ -1,36 +1,40 @@
 <svg width="900" height="90" viewBox="0 0 900 90" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="pinkGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ff4fd8">
-        <animate attributeName="stop-color"
-                 values="#ff4fd8;#ff9ef6;#ff4fd8"
-                 dur="3s"
-                 repeatCount="indefinite"/>
-      </stop>
-      <stop offset="50%" stop-color="#ffffff">
-        <animate attributeName="stop-color"
-                 values="#ffffff;#ffb3f1;#ffffff"
-                 dur="3s"
-                 repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" stop-color="#ff2fbf">
-        <animate attributeName="stop-color"
-                 values="#ff2fbf;#ff7ee7;#ff2fbf"
-                 dur="3s"
-                 repeatCount="indefinite"/>
-      </stop>
-    </linearGradient>
+    <linearGradient id="movingGlow" x1="-100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="transparent"/>
+      <stop offset="45%" stop-color="#b83280" stop-opacity="0.15"/>
+      <stop offset="50%" stop-color="#c84a93" stop-opacity="0.9"/>
+      <stop offset="55%" stop-color="#b83280" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="transparent"/>
 
 ```
-<filter id="pinkGlow" x="-40%" y="-80%" width="180%" height="260%">
-  <feGaussianBlur stdDeviation="3" result="blur"/>
-  <feColorMatrix in="blur" type="matrix"
-    values="1 0 0 0 1
-            0 0.2 0 0 0
-            0 0 1 0 0.8
-            0 0 0 1 0"/>
+  <animate
+    attributeName="x1"
+    values="-100%;100%"
+    dur="3.2s"
+    repeatCount="indefinite"/>
+
+  <animate
+    attributeName="x2"
+    values="0%;200%"
+    dur="3.2s"
+    repeatCount="indefinite"/>
+</linearGradient>
+
+<filter id="softPinkGlow" x="-40%" y="-100%" width="180%" height="300%">
+  <feGaussianBlur stdDeviation="4" result="blur"/>
+  <feColorMatrix
+    in="blur"
+    type="matrix"
+    values="
+      0.75 0    0    0 0.18
+      0    0.18 0    0 0.03
+      0    0    0.55 0 0.25
+      0    0    0    1 0
+    "
+    result="pinkBlur"/>
   <feMerge>
-    <feMergeNode/>
+    <feMergeNode in="pinkBlur"/>
     <feMergeNode in="SourceGraphic"/>
   </feMerge>
 </filter>
@@ -41,11 +45,20 @@
     font-size: 42px;
     font-weight: 800;
     letter-spacing: 0.5px;
-    filter: url(#pinkGlow);
+    fill: white;
+  }
+
+  .glow-text {
+    font-family: "JetBrains Mono", "Fira Code", "Segoe UI", monospace;
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    fill: url(#movingGlow);
+    filter: url(#softPinkGlow);
   }
 
   .pulse {
-    animation: pulseShake 3s ease-in-out infinite;
+    animation: pulseShake 3.2s ease-in-out infinite;
     transform-origin: center;
     transform-box: fill-box;
   }
@@ -55,23 +68,23 @@
       transform: scale(1) translate(0, 0);
     }
 
-    42% {
-      transform: scale(1.018) translate(0, 0);
+    43% {
+      transform: scale(1.01) translate(0, 0);
     }
 
-    46% {
-      transform: scale(1.022) translate(0.8px, -0.4px);
+    47% {
+      transform: scale(1.014) translate(0.5px, -0.3px);
     }
 
-    50% {
-      transform: scale(1.012) translate(-0.7px, 0.4px);
+    51% {
+      transform: scale(1.008) translate(-0.4px, 0.3px);
     }
 
-    54% {
-      transform: scale(1.018) translate(0.4px, 0);
+    56% {
+      transform: scale(1.01) translate(0.2px, 0);
     }
 
-    62% {
+    64% {
       transform: scale(1) translate(0, 0);
     }
   }
@@ -88,9 +101,20 @@
       y="48"
       text-anchor="middle"
       dominant-baseline="middle"
-      class="title"
-      fill="url(#pinkGradient)">
+      class="glow-text">
       Hi there, I'm Nikita / N1kLeS
     </text>
+
+```
+<text
+  x="450"
+  y="48"
+  text-anchor="middle"
+  dominant-baseline="middle"
+  class="title">
+  Hi there, I'm Nikita / N1kLeS
+</text>
+```
+
   </g>
 </svg>
