@@ -35,8 +35,6 @@ But the main thing is that I understand why it broke and how to fix it.
   <img src="./assets/tech-stack-title.svg?v=2" alt="Tech stack"/>
 </p>
 
-### Languages
-
 <p align="left">
   <img src="./assets/stack-marquee.svg?v=1" alt="Languages and tools"/>
 </p>
