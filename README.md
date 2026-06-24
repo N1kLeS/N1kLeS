@@ -13,7 +13,7 @@
 
 ---
 
-## 🧑‍💻 About me
+## About me
 
 ```txt
 status: 2nd-year Software Engineering student
@@ -66,7 +66,7 @@ But the main thing is that I understand why it broke and how to fix it.
 
 ---
 
-## 🧩 Small fact
+## Small fact
 
 ```java
 while (deadline.isClose()) {
