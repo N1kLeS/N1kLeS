@@ -8,154 +8,144 @@
         fill: #ffffff;
       }
 
-```
-  .code {
-    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-    font-size: 18px;
-    font-weight: 700;
-    fill: #ffffff;
-  }
+      .code {
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+        font-size: 18px;
+        font-weight: 700;
+        fill: #ffffff;
+      }
 
-  .muted {
-    fill: #8b949e;
-  }
+      .pink {
+        fill: #ff1493;
+      }
 
-  .pink {
-    fill: #ff1493;
-  }
+      .cursor {
+        fill: #ff8fcd;
+        animation: blink 1s steps(2, start) infinite;
+      }
 
-  .cursor {
-    fill: #ff8fcd;
-    animation: blink 1s steps(2, start) infinite;
-  }
+      .bar-bg {
+        fill: #30363d;
+      }
 
-  .bar-bg {
-    fill: #30363d;
-  }
+      .bar-fill {
+        fill: #ff1493;
+      }
 
-  .bar-fill {
-    fill: #ff1493;
-  }
+      .fade-1 {
+        animation: fade1 6s ease-in-out infinite;
+      }
 
-  .fade-1 {
-    animation: fade1 6s ease-in-out infinite;
-  }
+      .fade-2 {
+        animation: fade2 6s ease-in-out infinite;
+      }
 
-  .fade-2 {
-    animation: fade2 6s ease-in-out infinite;
-  }
+      .fade-3 {
+        animation: fade3 6s ease-in-out infinite;
+      }
 
-  .fade-3 {
-    animation: fade3 6s ease-in-out infinite;
-  }
+      @keyframes blink {
+        0%, 45% {
+          opacity: 1;
+        }
 
-  @keyframes blink {
-    0%, 45% {
-      opacity: 1;
-    }
+        46%, 100% {
+          opacity: 0;
+        }
+      }
 
-    46%, 100% {
-      opacity: 0;
-    }
-  }
+      @keyframes fade1 {
+        0%, 28% {
+          opacity: 1;
+        }
 
-  @keyframes fade1 {
-    0%, 28% {
-      opacity: 1;
-    }
+        33%, 100% {
+          opacity: 0;
+        }
+      }
 
-    33%, 100% {
-      opacity: 0;
-    }
-  }
+      @keyframes fade2 {
+        0%, 28% {
+          opacity: 0;
+        }
 
-  @keyframes fade2 {
-    0%, 28% {
-      opacity: 0;
-    }
+        33%, 61% {
+          opacity: 1;
+        }
 
-    33%, 61% {
-      opacity: 1;
-    }
+        66%, 100% {
+          opacity: 0;
+        }
+      }
 
-    66%, 100% {
-      opacity: 0;
-    }
-  }
+      @keyframes fade3 {
+        0%, 61% {
+          opacity: 0;
+        }
 
-  @keyframes fade3 {
-    0%, 61% {
-      opacity: 0;
-    }
+        66%, 94% {
+          opacity: 1;
+        }
 
-    66%, 94% {
-      opacity: 1;
-    }
-
-    100% {
-      opacity: 0;
-    }
-  }
-</style>
-```
-
+        100% {
+          opacity: 0;
+        }
+      }
+    </style>
   </defs>
 
   <rect width="560" height="125" fill="transparent"/>
 
-<text x="0" y="42" class="title">Tech stack</text>
+  <text x="0" y="42" class="title">Tech stack</text>
 
   <g transform="translate(0 76)">
-    <text x="0" y="0" class="code muted">&gt;</text>
+    <text x="0" y="0" class="code">&gt;</text>
 
-```
-<g class="fade-1">
-  <text x="34" y="0" class="code">
-    stack.load(
-    <tspan class="pink">Java</tspan>,
-    <tspan class="pink">Python</tspan>
-    )
-  </text>
-</g>
+    <g class="fade-1">
+      <text x="34" y="0" class="code">
+        <tspan>stack.load(</tspan>
+        <tspan class="pink">Java</tspan>
+        <tspan>, </tspan>
+        <tspan class="pink">Python</tspan>
+        <tspan>)</tspan>
+      </text>
+    </g>
 
-<g class="fade-2">
-  <text x="34" y="0" class="code">
-    stack.learn(
-    <tspan class="pink">Docker</tspan>,
-    <tspan class="pink">Gradle</tspan>
-    )
-  </text>
-</g>
+    <g class="fade-2">
+      <text x="34" y="0" class="code">
+        <tspan>stack.learn(</tspan>
+        <tspan class="pink">Docker</tspan>
+        <tspan>, </tspan>
+        <tspan class="pink">Gradle</tspan>
+        <tspan>)</tspan>
+      </text>
+    </g>
 
-<g class="fade-3">
-  <text x="34" y="0" class="code">
-    stack.update(
-    <tspan class="pink">Backend</tspan>,
-    <tspan class="pink">Tests</tspan>
-    )
-  </text>
-</g>
+    <g class="fade-3">
+      <text x="34" y="0" class="code">
+        <tspan>stack.update(</tspan>
+        <tspan class="pink">Backend</tspan>
+        <tspan>, </tspan>
+        <tspan class="pink">Tests</tspan>
+        <tspan>)</tspan>
+      </text>
+    </g>
 
-<rect x="430" y="-18" width="9" height="22" class="cursor"/>
-```
-
+    <rect x="420" y="-18" width="9" height="22" class="cursor"/>
   </g>
 
   <g transform="translate(0 98)">
     <rect x="0" y="0" width="460" height="11" rx="5.5" class="bar-bg"/>
 
-```
-<rect x="0" y="0" width="0" height="11" rx="5.5" class="bar-fill">
-  <animate
-    attributeName="width"
-    values="0;120;240;360;460;0"
-    keyTimes="0;0.22;0.45;0.68;0.88;1"
-    dur="6s"
-    repeatCount="indefinite"/>
-</rect>
+    <rect x="0" y="0" width="0" height="11" rx="5.5" class="bar-fill">
+      <animate
+        attributeName="width"
+        values="0;120;240;360;460;0"
+        keyTimes="0;0.22;0.45;0.68;0.88;1"
+        dur="6s"
+        repeatCount="indefinite"/>
+    </rect>
 
-<rect x="0" y="0" width="460" height="11" rx="5.5" fill="none" stroke="#ff8fcd" stroke-opacity="0.35"/>
-```
-
+    <rect x="0" y="0" width="460" height="11" rx="5.5" fill="none" stroke="#ff8fcd" stroke-opacity="0.35"/>
   </g>
 </svg>
