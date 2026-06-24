@@ -1,0 +1,56 @@
+<svg width="570" height="355" viewBox="0 0 570 355" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        font-size: 44px;
+        font-weight: 500;
+        fill: #ff4fa3;
+      }
+
+      .label {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        font-size: 28px;
+        font-weight: 600;
+        fill: #b9fff7;
+      }
+
+      .donut {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: spin 9s linear infinite;
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </defs>
+
+  <rect width="570" height="355" fill="#171421"/>
+
+  <text x="24" y="61" class="title">Top Languages by Repo</text>
+
+  <rect x="47" y="98" width="25" height="25" fill="#BD7B13"/>
+  <text x="79" y="121" class="label">Java</text>
+
+  <rect x="47" y="149" width="25" height="25" fill="#3E7CAF"/>
+  <text x="79" y="172" class="label">Python</text>
+
+  <rect x="47" y="199" width="25" height="25" fill="#F5E756"/>
+  <text x="79" y="222" class="label">JavaScript</text>
+
+  <g class="donut">
+    <circle cx="425" cy="221" r="91" fill="none" stroke="#BD7B13" stroke-width="47" stroke-dasharray="398 572" stroke-dashoffset="0" transform="rotate(-90 425 221)"/>
+    <circle cx="425" cy="221" r="91" fill="none" stroke="#3E7CAF" stroke-width="47" stroke-dasharray="96 572" stroke-dashoffset="-398" transform="rotate(-90 425 221)"/>
+    <circle cx="425" cy="221" r="91" fill="none" stroke="#F5E756" stroke-width="47" stroke-dasharray="78 572" stroke-dashoffset="-494" transform="rotate(-90 425 221)"/>
+  </g>
+
+  <circle cx="425" cy="221" r="67" fill="#171421"/>
+</svg>
