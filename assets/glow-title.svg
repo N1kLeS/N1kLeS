@@ -1,117 +1,126 @@
-<svg width="900" height="90" viewBox="0 0 900 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="100" viewBox="0 0 900 100" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="movingGlow" x1="-100%" y1="0%" x2="0%" y2="0%">
-      <stop offset="0%" stop-color="transparent"/>
-      <stop offset="45%" stop-color="#b83280" stop-opacity="0.15"/>
-      <stop offset="50%" stop-color="#c84a93" stop-opacity="0.9"/>
-      <stop offset="55%" stop-color="#b83280" stop-opacity="0.15"/>
-      <stop offset="100%" stop-color="transparent"/>
+    <filter id="hotPinkGlow" x="-80%" y="-180%" width="260%" height="460%">
+      <feGaussianBlur stdDeviation="4.5" result="softGlow"/>
+      <feColorMatrix
+        in="softGlow"
+        type="matrix"
+        values="
+          1 0 0 0 0
+          0 0.12 0 0 0
+          0 0 0.55 0 0
+          0 0 0 1 0"
+        result="pinkGlow"/>
+      <feMerge>
+        <feMergeNode in="pinkGlow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
 
 ```
-  <animate
-    attributeName="x1"
-    values="-100%;100%"
-    dur="3.2s"
-    repeatCount="indefinite"/>
+<filter id="alivePink" x="-80%" y="-180%" width="260%" height="460%">
+  <feMorphology in="SourceGraphic" operator="dilate" radius="0.45" result="thick">
+    <animate
+      attributeName="radius"
+      values="0.15;0.65;0.35;0.15"
+      dur="1.4s"
+      repeatCount="indefinite"/>
+  </feMorphology>
 
-  <animate
-    attributeName="x2"
-    values="0%;200%"
-    dur="3.2s"
-    repeatCount="indefinite"/>
-</linearGradient>
-
-<filter id="softPinkGlow" x="-40%" y="-100%" width="180%" height="300%">
-  <feGaussianBlur stdDeviation="4" result="blur"/>
-  <feColorMatrix
-    in="blur"
-    type="matrix"
-    values="
-      0.75 0    0    0 0.18
-      0    0.18 0    0 0.03
-      0    0    0.55 0 0.25
-      0    0    0    1 0
-    "
-    result="pinkBlur"/>
+  <feGaussianBlur in="thick" stdDeviation="1.4" result="blurred"/>
   <feMerge>
-    <feMergeNode in="pinkBlur"/>
+    <feMergeNode in="blurred"/>
     <feMergeNode in="SourceGraphic"/>
   </feMerge>
 </filter>
 
+<linearGradient id="diagonalBand" x1="0%" y1="0%" x2="100%" y2="0%">
+  <stop offset="0%" stop-color="black" stop-opacity="0"/>
+  <stop offset="16%" stop-color="white" stop-opacity="0.05"/>
+  <stop offset="32%" stop-color="white" stop-opacity="0.45"/>
+  <stop offset="48%" stop-color="white" stop-opacity="1"/>
+  <stop offset="52%" stop-color="white" stop-opacity="1"/>
+  <stop offset="68%" stop-color="white" stop-opacity="0.45"/>
+  <stop offset="84%" stop-color="white" stop-opacity="0.05"/>
+  <stop offset="100%" stop-color="black" stop-opacity="0"/>
+</linearGradient>
+
+<mask id="movingMask" maskUnits="userSpaceOnUse" x="-300" y="-100" width="1500" height="300">
+  <rect x="-300" y="-100" width="1500" height="300" fill="black"/>
+  <g transform="rotate(-18 450 50)">
+    <rect x="-560" y="-80" width="250" height="260" fill="url(#diagonalBand)">
+      <animate
+        attributeName="x"
+        from="-560"
+        to="1210"
+        dur="7.4s"
+        repeatCount="indefinite"/>
+    </rect>
+  </g>
+</mask>
+
 <style>
-  .title {
+  .titleBase {
     font-family: "JetBrains Mono", "Fira Code", "Segoe UI", monospace;
     font-size: 42px;
     font-weight: 800;
     letter-spacing: 0.5px;
-    fill: white;
+    fill: #ffffff;
   }
 
-  .glow-text {
+  .titlePink {
     font-family: "JetBrains Mono", "Fira Code", "Segoe UI", monospace;
     font-size: 42px;
     font-weight: 800;
     letter-spacing: 0.5px;
-    fill: url(#movingGlow);
-    filter: url(#softPinkGlow);
+    fill: #ff3ea5;
   }
 
-  .pulse {
-    animation: pulseShake 3.2s ease-in-out infinite;
-    transform-origin: center;
-    transform-box: fill-box;
-  }
-
-  @keyframes pulseShake {
-    0%, 100% {
-      transform: scale(1) translate(0, 0);
-    }
-
-    43% {
-      transform: scale(1.01) translate(0, 0);
-    }
-
-    47% {
-      transform: scale(1.014) translate(0.5px, -0.3px);
-    }
-
-    51% {
-      transform: scale(1.008) translate(-0.4px, 0.3px);
-    }
-
-    56% {
-      transform: scale(1.01) translate(0.2px, 0);
-    }
-
-    64% {
-      transform: scale(1) translate(0, 0);
-    }
+  .titlePinkCore {
+    font-family: "JetBrains Mono", "Fira Code", "Segoe UI", monospace;
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    fill: #ff8ad2;
   }
 </style>
 ```
 
   </defs>
 
-  <rect width="900" height="90" fill="transparent"/>
+  <rect width="900" height="100" fill="transparent"/>
 
-  <g class="pulse">
+  <!-- Белый основной текст -->
+
+<text
+ x="450"
+ y="56"
+ text-anchor="middle"
+ dominant-baseline="middle"
+ class="titleBase">
+Hi there, I'm Nikita / N1kLeS </text>
+
+  <!-- Розовая диагональная заливка без съезда текста -->
+
+  <g mask="url(#movingMask)">
     <text
       x="450"
-      y="48"
+      y="56"
       text-anchor="middle"
       dominant-baseline="middle"
-      class="glow-text">
+      class="titlePink"
+      filter="url(#hotPinkGlow)">
       Hi there, I'm Nikita / N1kLeS
     </text>
 
 ```
 <text
   x="450"
-  y="48"
+  y="56"
   text-anchor="middle"
   dominant-baseline="middle"
-  class="title">
+  class="titlePinkCore"
+  filter="url(#alivePink)">
   Hi there, I'm Nikita / N1kLeS
 </text>
 ```
