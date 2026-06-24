@@ -5,11 +5,6 @@
 <p align="center">
   <b>Software Engineering student ITMO University</b><br>
 </p>
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=N1kLeS&style=for-the-badge&color=ff69b4" alt="Profile views"/>
-</p>
-
 ---
 
 ## About me
