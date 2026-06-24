@@ -68,7 +68,7 @@ But the main thing is that I understand why it broke and how to fix it.
   </tr>
   <tr>
     <td align="center" width="50%">
-      <img src="./assets/top-languages.svg?v=2" width="100%" />
+      <img src="./assets/top-languages.svg" width="100%" alt="Languages by Repo" />
     </td>
     <td align="center" width="50%">
       <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=N1kLeS&theme=radical" width="100%" />
