@@ -54,29 +54,6 @@ But the main thing is that I understand why it broke and how to fix it.
 
 ---
 
-## 🚀 Current focus
-
-```txt
-> Java backend
-> frontend structure
-> Gradle & Docker
-> tests that are not just "для галочки"
-> turning lab chaos into normal projects
-```
-
----
-
-## 🗂️ Here you can find
-
-* university programming labs
-* web projects with backend/frontend separation
-* Gradle and Docker experiments
-* computational math code
-* Java and Python projects
-* Git experiments and occasional merge conflicts
-
----
-
 ## 📊 GitHub stats
 
 <p align="center">
