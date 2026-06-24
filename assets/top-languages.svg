@@ -35,7 +35,7 @@
 
   <rect width="570" height="355" fill="#171421"/>
 
-  <text x="24" y="61" class="title">Top Languages by Repo</text>
+  <text x="24" y="61" class="title">Languages by Repo</text>
 
   <rect x="47" y="98" width="25" height="25" fill="#BD7B13"/>
   <text x="79" y="121" class="label">Java</text>
