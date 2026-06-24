@@ -65,10 +65,9 @@ But the main thing is that I understand why it broke and how to fix it.
 ---
 
 <p align="center">
-  <img src="./assets/cat-meow.svg?v=1" width="520" alt="black cat meow"/>
+  <img src="./assets/cat-meow.svg?v=3" width="620" alt="black cat meow"/>
 </p>
 
 <p align="center">
   <b>Probably nothing.</b>
 </p>
-
