@@ -1,0 +1,176 @@
+<svg width="920" height="280" viewBox="0 0 920 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="rowClip">
+      <rect x="0" y="0" width="920" height="72"/>
+    </clipPath>
+
+```
+<style>
+  .heading {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    fill: #ffffff;
+  }
+
+  .badge-text {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    fill: #ffffff;
+  }
+
+  .badge-text-dark {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    fill: #111111;
+  }
+
+  .marquee-lang {
+    animation: moveRightLang 13s linear infinite;
+  }
+
+  .marquee-tools {
+    animation: moveRightTools 15s linear infinite;
+  }
+
+  @keyframes moveRightLang {
+    from {
+      transform: translateX(-760px);
+    }
+
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes moveRightTools {
+    from {
+      transform: translateX(-1010px);
+    }
+
+    to {
+      transform: translateX(0);
+    }
+  }
+</style>
+```
+
+  </defs>
+
+  <rect width="920" height="280" fill="transparent"/>
+
+<text x="0" y="38" class="heading">Languages</text>
+
+  <g transform="translate(0 70)" clip-path="url(#rowClip)">
+    <g class="marquee-lang">
+      <g transform="translate(0 0)">
+        <rect x="0" y="0" width="170" height="56" fill="#f38b00"/>
+        <text x="26" y="36" class="badge-text">JAVA</text>
+
+```
+    <rect x="182" y="0" width="185" height="56" fill="#3776ab"/>
+    <text x="208" y="36" class="badge-text">PYTHON</text>
+
+    <rect x="379" y="0" width="250" height="56" fill="#f7df1e"/>
+    <text x="405" y="36" class="badge-text-dark">JAVASCRIPT</text>
+
+    <rect x="641" y="0" width="120" height="56" fill="#663399"/>
+    <text x="667" y="36" class="badge-text">CSS</text>
+  </g>
+
+  <g transform="translate(760 0)">
+    <rect x="0" y="0" width="170" height="56" fill="#f38b00"/>
+    <text x="26" y="36" class="badge-text">JAVA</text>
+
+    <rect x="182" y="0" width="185" height="56" fill="#3776ab"/>
+    <text x="208" y="36" class="badge-text">PYTHON</text>
+
+    <rect x="379" y="0" width="250" height="56" fill="#f7df1e"/>
+    <text x="405" y="36" class="badge-text-dark">JAVASCRIPT</text>
+
+    <rect x="641" y="0" width="120" height="56" fill="#663399"/>
+    <text x="667" y="36" class="badge-text">CSS</text>
+  </g>
+
+  <g transform="translate(1520 0)">
+    <rect x="0" y="0" width="170" height="56" fill="#f38b00"/>
+    <text x="26" y="36" class="badge-text">JAVA</text>
+
+    <rect x="182" y="0" width="185" height="56" fill="#3776ab"/>
+    <text x="208" y="36" class="badge-text">PYTHON</text>
+
+    <rect x="379" y="0" width="250" height="56" fill="#f7df1e"/>
+    <text x="405" y="36" class="badge-text-dark">JAVASCRIPT</text>
+
+    <rect x="641" y="0" width="120" height="56" fill="#663399"/>
+    <text x="667" y="36" class="badge-text">CSS</text>
+  </g>
+</g>
+```
+
+  </g>
+
+<text x="0" y="180" class="heading">Tools</text>
+
+  <g transform="translate(0 212)" clip-path="url(#rowClip)">
+    <g class="marquee-tools">
+      <g transform="translate(0 0)">
+        <rect x="0" y="0" width="190" height="56" fill="#02303a"/>
+        <text x="26" y="36" class="badge-text">GRADLE</text>
+
+```
+    <rect x="202" y="0" width="195" height="56" fill="#2496ed"/>
+    <text x="228" y="36" class="badge-text">DOCKER</text>
+
+    <rect x="409" y="0" width="135" height="56" fill="#f05032"/>
+    <text x="435" y="36" class="badge-text">GIT</text>
+
+    <rect x="556" y="0" width="225" height="56" fill="#2ead33"/>
+    <text x="582" y="36" class="badge-text">PLAYWRIGHT</text>
+
+    <rect x="793" y="0" width="215" height="56" fill="#f71828"/>
+    <text x="819" y="36" class="badge-text">JAKARTA EE</text>
+  </g>
+
+  <g transform="translate(1010 0)">
+    <rect x="0" y="0" width="190" height="56" fill="#02303a"/>
+    <text x="26" y="36" class="badge-text">GRADLE</text>
+
+    <rect x="202" y="0" width="195" height="56" fill="#2496ed"/>
+    <text x="228" y="36" class="badge-text">DOCKER</text>
+
+    <rect x="409" y="0" width="135" height="56" fill="#f05032"/>
+    <text x="435" y="36" class="badge-text">GIT</text>
+
+    <rect x="556" y="0" width="225" height="56" fill="#2ead33"/>
+    <text x="582" y="36" class="badge-text">PLAYWRIGHT</text>
+
+    <rect x="793" y="0" width="215" height="56" fill="#f71828"/>
+    <text x="819" y="36" class="badge-text">JAKARTA EE</text>
+  </g>
+
+  <g transform="translate(2020 0)">
+    <rect x="0" y="0" width="190" height="56" fill="#02303a"/>
+    <text x="26" y="36" class="badge-text">GRADLE</text>
+
+    <rect x="202" y="0" width="195" height="56" fill="#2496ed"/>
+    <text x="228" y="36" class="badge-text">DOCKER</text>
+
+    <rect x="409" y="0" width="135" height="56" fill="#f05032"/>
+    <text x="435" y="36" class="badge-text">GIT</text>
+
+    <rect x="556" y="0" width="225" height="56" fill="#2ead33"/>
+    <text x="582" y="36" class="badge-text">PLAYWRIGHT</text>
+
+    <rect x="793" y="0" width="215" height="56" fill="#f71828"/>
+    <text x="819" y="36" class="badge-text">JAKARTA EE</text>
+  </g>
+</g>
+```
+
+  </g>
+</svg>
