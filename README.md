@@ -13,7 +13,7 @@ side quests: web, backend, algorithms, math, architecture, Docker, Gradle
 mood: probably nothing... until it compiles
 ```
 
-I’m learning software engineering through practice: university labs, backend/frontend projects, build systems, tests, Docker, algorithms and computational math.
+I’m learning software engineering <img src="./assets/glow-title.svg" alt="Hi there, I'm Nikita"/>.
 
 Sometimes I write clean code.
 Sometimes I write a костыль.
