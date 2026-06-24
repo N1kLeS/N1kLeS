@@ -76,7 +76,7 @@
  text-anchor="middle"
  dominant-baseline="middle"
  class="titleBase">
-Hi there, I'm Nikita / N1kLeS </text>
+Hi there, I'm Nikita</text>
 
 
   <g mask="url(#movingMask)">
@@ -86,7 +86,7 @@ Hi there, I'm Nikita / N1kLeS </text>
       text-anchor="middle"
       dominant-baseline="middle"
       class="titleFill">
-      Hi there, I'm Nikita / N1kLeS
+      Hi there, I'm Nikita
     </text>
 
 ```
@@ -97,7 +97,7 @@ Hi there, I'm Nikita / N1kLeS </text>
   dominant-baseline="middle"
   class="titleFillSoft"
   opacity="0.75">
-  Hi there, I'm Nikita / N1kLeS
+  Hi there, I'm Nikita
 </text>
 ```
 
