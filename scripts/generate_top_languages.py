@@ -8,25 +8,25 @@ token = os.environ["GITHUB_TOKEN"]
 username = os.environ.get("GITHUB_USERNAME", "N1kLeS")
 
 ignored_languages = {
-    "Dockerfile",
-    "Gradle",
-    "Makefile",
-    "CMake",
-    "Shell",
-    "Batchfile",
-    "PowerShell",
-    "Procfile",
-    "HCL",
-    "YAML",
-    "JSON",
-    "XML",
-    "Text",
-    "Markdown",
-    "Git Attributes",
-    "Git Config",
-    "Properties",
-    "TOML",
-    "INI"
+"Dockerfile",
+"Gradle",
+"Makefile",
+"CMake",
+"Shell",
+"Batchfile",
+"PowerShell",
+"Procfile",
+"HCL",
+"YAML",
+"JSON",
+"XML",
+"Text",
+"Markdown",
+"Git Attributes",
+"Git Config",
+"Properties",
+"TOML",
+"INI"
 }
 
 query = """
@@ -56,26 +56,26 @@ color
 """
 
 payload = json.dumps({
-    "query": query,
-    "variables": {
-        "login": username
-    }
+"query": query,
+"variables": {
+"login": username
+}
 }).encode("utf-8")
 
 req = urllib.request.Request(
-    "https://api.github.com/graphql",
-    data=payload,
-    headers={
-        "Authorization": f"Bearer {token}",
-        "Content-Type": "application/json"
-    }
+"https://api.github.com/graphql",
+data=payload,
+headers={
+"Authorization": f"Bearer {token}",
+"Content-Type": "application/json"
+}
 )
 
 with urllib.request.urlopen(req) as resp:
-    data = json.loads(resp.read().decode("utf-8"))
+data = json.loads(resp.read().decode("utf-8"))
 
 if "errors" in data:
-    raise RuntimeError(data["errors"])
+raise RuntimeError(data["errors"])
 
 repos = data["data"]["user"]["repositories"]["nodes"]
 
@@ -83,31 +83,31 @@ totals = {}
 colors = {}
 
 for repo in repos:
-    for edge in repo["languages"]["edges"]:
-        name = edge["node"]["name"]
+for edge in repo["languages"]["edges"]:
+name = edge["node"]["name"]
 
 ```
-if name in ignored_languages:
-    continue
+    if name in ignored_languages:
+        continue
 
-size = edge["size"]
-color = edge["node"]["color"] or "#999999"
+    size = edge["size"]
+    color = edge["node"]["color"] or "#999999"
 
-totals[name] = totals.get(name, 0) + size
-colors[name] = color
+    totals[name] = totals.get(name, 0) + size
+    colors[name] = color
 ```
 
 items = sorted(totals.items(), key=lambda item: item[1], reverse=True)
 
 if not items:
-    items = [("No data", 1)]
+items = [("No data", 1)]
 colors["No data"] = "#999999"
 
 top_items = items[:4]
 other_value = sum(value for _, value in items[4:])
 
 if other_value > 0:
-    top_items.append(("Other", other_value))
+top_items.append(("Other", other_value))
 colors["Other"] = "#6e7681"
 
 items = top_items
@@ -132,7 +132,7 @@ circles = []
 offset = 0.0
 
 for name, value in items:
-    part = value / total_size
+part = value / total_size
 dash = circ * part
 color = colors.get(name, "#999999")
 
@@ -149,7 +149,7 @@ offset += dash
 legend = []
 
 for i, (name, value) in enumerate(items):
-    y = legend_start_y + i * legend_gap
+y = legend_start_y + i * legend_gap
 pct = value / total_size * 100
 color = colors.get(name, "#999999")
 label = f"{name} {pct:.1f}%"
@@ -216,4 +216,4 @@ fill: #ff4fa3;
 os.makedirs("assets", exist_ok=True)
 
 with open("assets/top-languages.svg", "w", encoding="utf-8") as f:
-    f.write(svg)
+f.write(svg)
