@@ -32,7 +32,7 @@ But the main thing is that I understand why it broke and how to fix it.
 ---
 
 <p align="left">
-  <img src="./assets/tech-stack-title.svg?v=1" alt="Tech stack"/>
+  <img src="./assets/tech-stack-title.svg?v=2" alt="Tech stack"/>
 </p>
 
 ### Languages
