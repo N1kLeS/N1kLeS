@@ -65,7 +65,8 @@ But the main thing is that I understand why it broke and how to fix it.
 </p>
 
 <p align="center">
-  <img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=N1kLeS&theme=radical" alt="Repos per language"/>
+  <img src="./assets/top-languages.svg?v=1" alt="Languages by Repo"/>
+</p>
   <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=N1kLeS&theme=radical" alt="Stats"/>
 </p>
 
