@@ -7,12 +7,6 @@
   code, bugs, labs, commits and a little bit of chaos
 </p>
 
-
-<p align="center">
-  <b>Software Engineering student @ ITMO University</b><br>
-  code, bugs, labs, commits and a little bit of chaos
-</p>
-
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=N1kLeS&style=for-the-badge&color=ff69b4" alt="Profile views"/>
 </p>
