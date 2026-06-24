@@ -1,92 +1,85 @@
-<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
       .float {
-        animation: float 2.6s ease-in-out infinite;
+        animation: float 2.8s ease-in-out infinite;
         transform-origin: center;
       }
 
-      .cat-fill {
-        fill: #0b0b0f;
-      }
+```
+  .outline {
+    fill: #f7f7f7;
+  }
 
-      .cat-stroke {
-        stroke: #f2f2f2;
-        stroke-width: 3.4;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-      }
+  .cat {
+    fill: #08090d;
+  }
 
-      .eye {
-        fill: #ff4fa3;
-        stroke: #ffffff;
-        stroke-width: 1.3;
-      }
+  .inner-ear {
+    fill: #2a1825;
+  }
 
-      .nose {
-        fill: #ff8fcd;
-      }
+  .eye {
+    fill: #ff4fa3;
+    stroke: #ffffff;
+    stroke-width: 5;
+  }
 
-      .mouth {
-        stroke: #ff8fcd;
-        stroke-width: 2.7;
-        stroke-linecap: round;
-      }
+  .highlight {
+    fill: #ffffff;
+  }
 
-      .ear-inner {
-        fill: #2a1b26;
-      }
+  .nose {
+    fill: #ff8fcd;
+  }
 
-      .whisker {
-        stroke: #d8d8d8;
-        stroke-width: 2;
-        stroke-linecap: round;
-        opacity: 0.9;
-      }
+  .mouth {
+    fill: none;
+    stroke: #ff8fcd;
+    stroke-width: 8;
+    stroke-linecap: round;
+  }
 
-      .paw-line {
-        stroke: #f2f2f2;
-        stroke-width: 2.4;
-        stroke-linecap: round;
-      }
+  .whisker {
+    stroke: #d7d7d7;
+    stroke-width: 6;
+    stroke-linecap: round;
+  }
 
-      @keyframes float {
-        0%, 100% {
-          transform: translateY(0);
-        }
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
 
-        50% {
-          transform: translateY(-5px);
-        }
-      }
-    </style>
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+</style>
+```
+
   </defs>
 
-  <rect width="180" height="180" fill="transparent"/>
+  <rect width="220" height="220" fill="transparent"/>
 
   <g class="float">
-    <path d="M46 129C26 133 19 117 24 104C28 93 39 91 49 96" fill="none" class="cat-stroke"/>
-    <path d="M56 55L68 27L87 47L93 53L99 47L118 27L130 55L135 60C147 73 151 95 144 113C138 129 126 139 111 145C95 151 77 151 62 144C48 138 37 126 34 111C30 93 35 74 47 61L56 55Z" class="cat-fill cat-stroke"/>
-    <path d="M61 53L69 34L83 49L61 53Z" class="ear-inner"/>
-    <path d="M125 53L117 34L103 49L125 53Z" class="ear-inner"/>
-    <ellipse cx="72" cy="83" rx="8" ry="11" class="eye"/>
-    <ellipse cx="110" cy="83" rx="8" ry="11" class="eye"/>
-    <ellipse cx="74" cy="81" rx="2" ry="4" fill="#ffffff"/>
-    <ellipse cx="112" cy="81" rx="2" ry="4" fill="#ffffff"/>
-    <path d="M87 96L95 96L91 102L87 96Z" class="nose"/>
-    <path d="M91 102V108" class="mouth"/>
-    <path d="M91 108C86 114 80 114 75 109" class="mouth"/>
-    <path d="M91 108C96 114 102 114 107 109" class="mouth"/>
-    <path d="M60 97L42 93" class="whisker"/>
-    <path d="M60 104L39 104" class="whisker"/>
-    <path d="M60 111L42 115" class="whisker"/>
-    <path d="M122 97L140 93" class="whisker"/>
-    <path d="M122 104L143 104" class="whisker"/>
-    <path d="M122 111L140 115" class="whisker"/>
-    <path d="M73 122V147" class="cat-stroke"/>
-    <path d="M109 122V147" class="cat-stroke"/>
-    <path d="M66 147H79" class="paw-line"/>
-    <path d="M103 147H116" class="paw-line"/>
-    <path d="M48 127C42 120 39 112 39 103" fill="none" class="cat-stroke"/>
+    <path class="outline" d="M60 81L74 24L111 61L147 24L160 81C186 106 196 139 185 169C173 203 139 214 110 214C81 214 47 203 35 169C24 139 34 106 60 81Z"/>
+    <path class="cat" d="M66 83L78 36L109 68C110 69 112 69 113 68L144 36L155 83C178 105 187 135 177 163C166 192 136 202 110 202C84 202 54 192 43 163C33 135 42 105 66 83Z"/>
+    <path class="inner-ear" d="M81 42L101 77L66 84L81 42Z"/>
+    <path class="inner-ear" d="M141 42L121 77L156 84L141 42Z"/>
+    <ellipse class="eye" cx="77" cy="116" rx="18" ry="25"/>
+    <ellipse class="eye" cx="143" cy="116" rx="18" ry="25"/>
+    <ellipse class="highlight" cx="84" cy="111" rx="6" ry="12"/>
+    <ellipse class="highlight" cx="150" cy="111" rx="6" ry="12"/>
+    <path class="nose" d="M101 140H119L110 153L101 140Z"/>
+    <path class="mouth" d="M110 152V163"/>
+    <path class="mouth" d="M110 163C100 176 87 176 76 164"/>
+    <path class="mouth" d="M110 163C120 176 133 176 144 164"/>
+    <path class="whisker" d="M57 130L25 123"/>
+    <path class="whisker" d="M57 143H21"/>
+    <path class="whisker" d="M57 156L25 163"/>
+    <path class="whisker" d="M163 130L195 123"/>
+    <path class="whisker" d="M163 143H199"/>
+    <path class="whisker" d="M163 156L195 163"/>
   </g>
 </svg>
