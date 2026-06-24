@@ -1,4 +1,7 @@
-<h1 align="center">Hi there, I'm Nikita / N1kLeS 👋</h1>
+<h1 align="center">
+  Hi there, I'm Nikita / N1kLeS
+  <img src="./assets/pixel-hand.gif" width="42" alt="waving hand"/>
+</h1>
 
 <p align="center">
   <b>Software Engineering student @ ITMO University</b><br>
@@ -21,7 +24,7 @@ side quests: web, backend, algorithms, math, architecture, Docker, Gradle
 mood: probably nothing... until it compiles
 ```
 
-I’m learning software engineering through practice: university labs, small projects, experiments with backend/frontend, build systems, tests, Docker, algorithms and computational math.
+I’m learning software engineering through practice: university labs, backend/frontend projects, build systems, tests, Docker, algorithms and computational math.
 
 Sometimes I write clean code.
 Sometimes I write a костыль.
@@ -40,7 +43,7 @@ But the main thing is that I understand why it broke and how to fix it.
   <img src="https://img.shields.io/badge/CSS-663399?style=for-the-badge&logo=css&logoColor=white"/>
 </p>
 
-### Tools & frameworks
+### Tools
 
 <p>
   <img src="https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white"/>
@@ -52,39 +55,26 @@ But the main thing is that I understand why it broke and how to fix it.
 
 ---
 
-## 🚀 What I work with
-
-* backend and REST APIs
-* frontend projects and UI logic
-* Gradle build automation
-* Docker / Docker Compose
-* functional and unit tests
-* numerical methods and computational mathematics
-* low-level architecture labs and CPU/ISA stuff
-* Git, branches, commits, submodules and occasional merge conflicts
-
----
-
-## 📌 Current focus
+## 🚀 Current focus
 
 ```txt
-> improving Java backend skills
-> learning better frontend structure
-> writing tests that are not just "для галочки"
-> understanding build systems deeper
-> slowly turning lab chaos into normal projects
+> Java backend
+> frontend structure
+> Gradle & Docker
+> tests that are not just "для галочки"
+> turning lab chaos into normal projects
 ```
 
 ---
 
-## 🗂️ Some things you can find here
+## 🗂️ Here you can find
 
 * university programming labs
 * web projects with backend/frontend separation
 * Gradle and Docker experiments
 * computational math code
-* Java projects from ITMO courses
-* Python experiments and visualizations
+* Java and Python projects
+* Git experiments and occasional merge conflicts
 
 ---
 
@@ -107,7 +97,7 @@ But the main thing is that I understand why it broke and how to fix it.
 
 ## 🧩 Small fact
 
-```txt
+```java
 while (deadline.isClose()) {
     writeCode();
     fixBugs();
