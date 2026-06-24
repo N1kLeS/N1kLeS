@@ -1,138 +1,60 @@
-<svg width="440" height="80" viewBox="0 0 440 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="340" height="76" viewBox="0 0 340 76" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <filter id="pinkGlow" x="-80%" y="-140%" width="260%" height="380%">
-      <feGaussianBlur stdDeviation="2.8" result="blur"/>
-      <feColorMatrix
-        in="blur"
-        type="matrix"
-        values="
-          1 0 0 0 0
-          0 0.18 0 0 0
-          0 0 0.55 0 0
-          0 0 0 0.9 0"
-        result="pinkBlur"/>
-      <feMerge>
-        <feMergeNode in="pinkBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
+    <style>
+      .letter {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        font-size: 34px;
+        font-weight: 700;
+        fill: #ffffff;
+        text-rendering: geometricPrecision;
+      }
 
-```
-<style>
-  .letter {
-    font-family: "JetBrains Mono", "Fira Code", "Segoe UI", monospace;
-    font-size: 38px;
-    font-weight: 800;
-    fill: #ffffff;
-    filter: url(#pinkGlow);
-  }
-</style>
-```
+      .a,
+      .b {
+        transform-box: fill-box;
+        transform-origin: center bottom;
+      }
 
+      .a {
+        animation: squashA 2.2s ease-in-out infinite;
+      }
+
+      .b {
+        animation: squashB 2.2s ease-in-out infinite;
+      }
+
+      @keyframes squashA {
+        0%   { transform: scale(1.10, 0.72); }
+        25%  { transform: scale(0.96, 1.02); }
+        50%  { transform: scale(1.10, 0.72); }
+        75%  { transform: scale(0.96, 1.02); }
+        100% { transform: scale(1.10, 0.72); }
+      }
+
+      @keyframes squashB {
+        0%   { transform: scale(0.96, 1.02); }
+        25%  { transform: scale(1.10, 0.72); }
+        50%  { transform: scale(0.96, 1.02); }
+        75%  { transform: scale(1.10, 0.72); }
+        100% { transform: scale(0.96, 1.02); }
+      }
+    </style>
   </defs>
 
-  <rect width="440" height="80" fill="transparent"/>
+  <rect width="340" height="76" fill="transparent"/>
 
-  <!-- GitHub -->
+  <g transform="translate(0 50)">
+    <g class="a"><text class="letter" x="0"   y="0">G</text></g>
+    <g class="b"><text class="letter" x="24"  y="0">i</text></g>
+    <g class="a"><text class="letter" x="35"  y="0">t</text></g>
+    <g class="b"><text class="letter" x="49"  y="0">H</text></g>
+    <g class="a"><text class="letter" x="75"  y="0">u</text></g>
+    <g class="b"><text class="letter" x="97"  y="0">b</text></g>
 
-  <g transform="translate(85 42)">
-    <animateTransform attributeName="transform" type="scale"
-      additive="sum"
-      values="1;1.13;1;0.94;1"
-      dur="3.2s"
-      repeatCount="indefinite"/>
-    <text class="letter" text-anchor="middle" dominant-baseline="middle">G</text>
-  </g>
-
-  <g transform="translate(110 42)">
-    <animateTransform attributeName="transform" type="scale"
-      additive="sum"
-      values="1;0.94;1;1.13;1"
-      dur="3.2s"
-      repeatCount="indefinite"/>
-    <text class="letter" text-anchor="middle" dominant-baseline="middle">i</text>
-  </g>
-
-  <g transform="translate(135 42)">
-    <animateTransform attributeName="transform" type="scale"
-      additive="sum"
-      values="1;1.13;1;0.94;1"
-      dur="3.2s"
-      repeatCount="indefinite"/>
-    <text class="letter" text-anchor="middle" dominant-baseline="middle">t</text>
-  </g>
-
-  <g transform="translate(160 42)">
-    <animateTransform attributeName="transform" type="scale"
-      additive="sum"
-      values="1;0.94;1;1.13;1"
-      dur="3.2s"
-      repeatCount="indefinite"/>
-    <text class="letter" text-anchor="middle" dominant-baseline="middle">H</text>
-  </g>
-
-  <g transform="translate(185 42)">
-    <animateTransform attributeName="transform" type="scale"
-      additive="sum"
-      values="1;1.13;1;0.94;1"
-      dur="3.2s"
-      repeatCount="indefinite"/>
-    <text class="letter" text-anchor="middle" dominant-baseline="middle">u</text>
-  </g>
-
-  <g transform="translate(210 42)">
-    <animateTransform attributeName="transform" type="scale"
-      additive="sum"
-      values="1;0.94;1;1.13;1"
-      dur="3.2s"
-      repeatCount="indefinite"/>
-    <text class="letter" text-anchor="middle" dominant-baseline="middle">b</text>
-  </g>
-
-  <!-- stats -->
-
-  <g transform="translate(270 42)">
-    <animateTransform attributeName="transform" type="scale"
-      additive="sum"
-      values="1;1.13;1;0.94;1"
-      dur="3.2s"
-      repeatCount="indefinite"/>
-    <text class="letter" text-anchor="middle" dominant-baseline="middle">s</text>
-  </g>
-
-  <g transform="translate(295 42)">
-    <animateTransform attributeName="transform" type="scale"
-      additive="sum"
-      values="1;0.94;1;1.13;1"
-      dur="3.2s"
-      repeatCount="indefinite"/>
-    <text class="letter" text-anchor="middle" dominant-baseline="middle">t</text>
-  </g>
-
-  <g transform="translate(320 42)">
-    <animateTransform attributeName="transform" type="scale"
-      additive="sum"
-      values="1;1.13;1;0.94;1"
-      dur="3.2s"
-      repeatCount="indefinite"/>
-    <text class="letter" text-anchor="middle" dominant-baseline="middle">a</text>
-  </g>
-
-  <g transform="translate(345 42)">
-    <animateTransform attributeName="transform" type="scale"
-      additive="sum"
-      values="1;0.94;1;1.13;1"
-      dur="3.2s"
-      repeatCount="indefinite"/>
-    <text class="letter" text-anchor="middle" dominant-baseline="middle">t</text>
-  </g>
-
-  <g transform="translate(370 42)">
-    <animateTransform attributeName="transform" type="scale"
-      additive="sum"
-      values="1;1.13;1;0.94;1"
-      dur="3.2s"
-      repeatCount="indefinite"/>
-    <text class="letter" text-anchor="middle" dominant-baseline="middle">s</text>
+    <g class="a"><text class="letter" x="139" y="0">s</text></g>
+    <g class="b"><text class="letter" x="159" y="0">t</text></g>
+    <g class="a"><text class="letter" x="173" y="0">a</text></g>
+    <g class="b"><text class="letter" x="195" y="0">t</text></g>
+    <g class="a"><text class="letter" x="209" y="0">s</text></g>
   </g>
 </svg>
