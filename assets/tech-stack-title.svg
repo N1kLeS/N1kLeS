@@ -133,19 +133,4 @@
 
     <rect x="420" y="-18" width="9" height="22" class="cursor"/>
   </g>
-
-  <g transform="translate(0 98)">
-    <rect x="0" y="0" width="460" height="11" rx="5.5" class="bar-bg"/>
-
-    <rect x="0" y="0" width="0" height="11" rx="5.5" class="bar-fill">
-      <animate
-        attributeName="width"
-        values="0;120;240;360;460;0"
-        keyTimes="0;0.22;0.45;0.68;0.88;1"
-        dur="6s"
-        repeatCount="indefinite"/>
-    </rect>
-
-    <rect x="0" y="0" width="460" height="11" rx="5.5" fill="none" stroke="#ff8fcd" stroke-opacity="0.35"/>
-  </g>
 </svg>
