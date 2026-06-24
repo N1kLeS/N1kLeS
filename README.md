@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/glow-title.svg" alt="Hi there, I'm Nikita / N1kLeS"/>
+  <img src="./assets/glow-title.svg" alt="Hi there, I'm Nikita"/>
 </p>
 
 <p align="center">
