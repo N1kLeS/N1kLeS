@@ -13,7 +13,7 @@ side quests: web, backend, algorithms, math, architecture, Docker, Gradle
 mood: probably nothing... until it compiles
 ```
 
-I’m learning software engineering <img src="./okak"/>.
+I’m learning software engineering <img src="./okak.webp"/>.
 
 Sometimes I write clean code.
 Sometimes I write a костыль.
