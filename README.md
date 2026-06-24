@@ -69,16 +69,14 @@ But the main thing is that I understand why it broke and how to fix it.
 <p align="center">
   <details>
     <summary>
-      <img src="./assets/black-cat.svg" width="120" alt="black cat"/>
+      <img src="./assets/black-cat.svg" width="150" alt="black cat"/>
     </summary>
-
-  <p align="center">
-    <b>meow</b>
-  </p>
+    <p align="center">
+      <img src="./assets/meow-wave.svg" width="260" alt="meow"/>
+    </p>
   </details>
 </p>
 
 <p align="center">
   <b>Probably nothing.</b>
 </p>
-
