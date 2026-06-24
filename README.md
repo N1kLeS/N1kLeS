@@ -67,14 +67,7 @@ But the main thing is that I understand why it broke and how to fix it.
 ---
 
 <p align="center">
-  <details>
-    <summary>
-      <img src="./assets/black-cat.svg" width="150" alt="black cat"/>
-    </summary>
-    <p align="center">
-      <img src="./assets/meow-wave.svg" width="280" alt="meow"/>
-    </p>
-  </details>
+  <img src="./assets/cat-meow.svg?v=1" width="520" alt="black cat meow"/>
 </p>
 
 <p align="center">
