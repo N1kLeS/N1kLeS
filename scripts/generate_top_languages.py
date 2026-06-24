@@ -1,6 +1,4 @@
-from pathlib import Path
-
-code = r'''import json
+import json
 import math
 import os
 import urllib.request
@@ -212,8 +210,3 @@ os.makedirs("assets", exist_ok=True)
 
 with open("assets/top-languages.svg", "w", encoding="utf-8") as f:
     f.write(svg)
-'''
-
-path = Path("/mnt/data/generate_top_languages.py")
-path.write_text(code, encoding="utf-8")
-path.as_posix()
