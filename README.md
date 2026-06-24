@@ -3,8 +3,7 @@
 </p>
 
 <p align="center">
-  <b>Software Engineering student @ ITMO University</b><br>
-  code, bugs, labs, commits and a little bit of chaos
+  <b>Software Engineering student ITMO University</b><br>
 </p>
 
 <p align="center">
