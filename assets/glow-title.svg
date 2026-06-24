@@ -1,6 +1,6 @@
 <svg width="900" height="100" viewBox="0 0 900 100" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Плавная, но отчётливая розовая заливка -->
+
     <linearGradient id="fillBand" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="black" stop-opacity="0"/>
       <stop offset="8%" stop-color="white" stop-opacity="0.10"/>
@@ -14,7 +14,7 @@
     </linearGradient>
 
 ```
-<!-- Бесшовная движущаяся маска -->
+    
 <mask id="movingMask" maskUnits="userSpaceOnUse" x="-400" y="-140" width="1700" height="380">
   <rect x="-400" y="-140" width="1700" height="380" fill="black"/>
 
@@ -69,7 +69,6 @@
 
   <rect width="900" height="100" fill="transparent"/>
 
-  <!-- Белый базовый текст -->
 
 <text
  x="450"
@@ -79,7 +78,6 @@
  class="titleBase">
 Hi there, I'm Nikita / N1kLeS </text>
 
-  <!-- Плавная розовая заливка -->
 
   <g mask="url(#movingMask)">
     <text
