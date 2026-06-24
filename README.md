@@ -54,7 +54,7 @@ But the main thing is that I understand why it broke and how to fix it.
 
 ---
 
-<p align="center">
+<p align="left">
   <img src="./assets/github-stats-title.svg?v=1" alt="GitHub stats"/>
 </p>
 
