@@ -60,15 +60,21 @@ But the main thing is that I understand why it broke and how to fix it.
   <img src="./assets/github-stats-title.svg?v=1" alt="GitHub stats"/>
 </p>
 
-<p align="center">
-  <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=N1kLeS&theme=radical" alt="Profile details"/>
-</p>
-
-<p align="center">
-  <img src="./assets/top-languages.svg?v=1" alt="Languages by Repo"/>
-</p>
-  <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=N1kLeS&theme=radical" alt="Stats"/>
-</p>
+<table>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=N1kLeS&theme=radical" width="100%" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="./assets/top-languages.svg?v=2" width="100%" />
+    </td>
+    <td align="center" width="50%">
+      <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=N1kLeS&theme=radical" width="100%" />
+    </td>
+  </tr>
+</table>
 
 ---
 
