@@ -5,7 +5,6 @@
 <p align="center">
   <b>Software Engineering student ITMO University</b><br>
 </p>
----
 
 ## About me
 
