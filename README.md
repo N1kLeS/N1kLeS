@@ -66,16 +66,56 @@ But the main thing is that I understand why it broke and how to fix it.
 
 ---
 
-## Small fact
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .cat {
+        fill: #050505;
+      }
 
-```java
-while (deadline.isClose()) {
-    writeCode();
-    fixBugs();
-    createNewBugs();
-    commit("final_final_real_version");
-}
 ```
+  .eye {
+    fill: #ff4fa3;
+  }
+
+  .tail {
+    fill: none;
+    stroke: #050505;
+    stroke-width: 14;
+    stroke-linecap: round;
+  }
+
+  .float {
+    animation: float 2.4s ease-in-out infinite;
+    transform-origin: center;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+</style>
+```
+
+  </defs>
+
+  <rect width="160" height="160" fill="transparent"/>
+
+  <g class="float">
+    <path class="tail" d="M55 118 C25 122 25 82 52 88"/>
+    <path class="cat" d="M44 61 L54 28 L75 51 L97 51 L118 28 L128 61 C141 74 145 99 132 119 C119 140 83 145 58 131 C35 118 30 79 44 61Z"/>
+    <ellipse class="eye" cx="69" cy="82" rx="6" ry="9"/>
+    <ellipse class="eye" cx="103" cy="82" rx="6" ry="9"/>
+    <path d="M83 96 L90 96 L86.5 101Z" fill="#ff8fcd"/>
+    <path d="M75 108 C82 114 91 114 98 108" stroke="#ff8fcd" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>
+
 
 <p align="center">
   <b>Probably nothing.</b>
