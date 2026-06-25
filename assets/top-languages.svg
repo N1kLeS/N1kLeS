@@ -37,10 +37,10 @@
 
   <text x="24" y="61" class="title">Languages by Repo</text>
 
-  <rect x="47" y="98" width="25" height="25" fill="#b07219"/><text x="79" y="121" class="label">Java 81.6%</text><rect x="47" y="148" width="25" height="25" fill="#f1e05a"/><text x="79" y="171" class="label">JavaScript 11.6%</text><rect x="47" y="198" width="25" height="25" fill="#3572A5"/><text x="79" y="221" class="label">Python 3.4%</text><rect x="47" y="248" width="25" height="25" fill="#663399"/><text x="79" y="271" class="label">CSS 3.4%</text>
+  <rect x="47" y="98" width="25" height="25" fill="#b07219"/><text x="79" y="121" class="label">Java 74.4%</text><rect x="47" y="148" width="25" height="25" fill="#f1e05a"/><text x="79" y="171" class="label">JavaScript 18.8%</text><rect x="47" y="198" width="25" height="25" fill="#663399"/><text x="79" y="221" class="label">CSS 5.4%</text><rect x="47" y="248" width="25" height="25" fill="#3572A5"/><text x="79" y="271" class="label">Python 1.3%</text>
 
   <g class="donut">
-    <circle cx="425" cy="187" r="91" fill="none" stroke="#b07219" stroke-width="47" stroke-dasharray="466.62 571.77" stroke-dashoffset="-0.00" transform="rotate(-90 425 187)"/><circle cx="425" cy="187" r="91" fill="none" stroke="#f1e05a" stroke-width="47" stroke-dasharray="66.24 571.77" stroke-dashoffset="-466.62" transform="rotate(-90 425 187)"/><circle cx="425" cy="187" r="91" fill="none" stroke="#3572A5" stroke-width="47" stroke-dasharray="19.68 571.77" stroke-dashoffset="-532.86" transform="rotate(-90 425 187)"/><circle cx="425" cy="187" r="91" fill="none" stroke="#663399" stroke-width="47" stroke-dasharray="19.23 571.77" stroke-dashoffset="-552.54" transform="rotate(-90 425 187)"/>
+    <circle cx="425" cy="187" r="91" fill="none" stroke="#b07219" stroke-width="47" stroke-dasharray="425.66 571.77" stroke-dashoffset="-0.00" transform="rotate(-90 425 187)"/><circle cx="425" cy="187" r="91" fill="none" stroke="#f1e05a" stroke-width="47" stroke-dasharray="107.27 571.77" stroke-dashoffset="-425.66" transform="rotate(-90 425 187)"/><circle cx="425" cy="187" r="91" fill="none" stroke="#663399" stroke-width="47" stroke-dasharray="31.15 571.77" stroke-dashoffset="-532.93" transform="rotate(-90 425 187)"/><circle cx="425" cy="187" r="91" fill="none" stroke="#3572A5" stroke-width="47" stroke-dasharray="7.69 571.77" stroke-dashoffset="-564.08" transform="rotate(-90 425 187)"/>
   </g>
 
   <circle cx="425" cy="187" r="67" fill="#171421"/>
